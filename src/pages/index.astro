@@ -1,0 +1,115 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import SocialPill from "../components/SocialPill.astro";
+import Projects from "../components/Projects.astro";
+import Experiencia from "../components/Experiencia.astro";
+import Contacto from "../components/Contacto.astro";
+
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import ProjectIcon from "../components/icons/Project.astro";
+import MassageIcon from "../components/icons/Massage.astro"
+---
+
+<Layout
+	title="Portfolio de Elias - Programador y Desarrollador Web"
+	description="Hola! Soy Elias Silva, un apasionado programador y desarrollador web. Estoy en busca de nuevas oportunidades laborales para contribuir con mi experiencia y habilidades al éxito de proyectos innovadores. Descubre cómo mi dedicación y conocimientos pueden agregar valor a tu equipo. ¡Contrátame y juntos creemos soluciones web excepcionales!"
+>
+	<main class="px-6">
+		<SectionContainer class="py-44 pb-24">
+			<img
+				class="bg-white rounded-full size-16 object-cover"
+				src="src/Imgs/IMG_20240105_005020.jpg"
+				alt="elias photo"
+			/>
+
+			<h1
+				class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 py-7"
+			>
+				Hey, soy Elias Silva
+				<div class="flex justify-center items-center">
+					<a
+						href="https://www.linkedin.com/in/elias-silva-96a7182a6/"
+						target="_blank"
+						rel="noopener"
+						class="flex justify-center items-center"
+					>
+						<Badge>Disponible para trabajar</Badge></a
+					>
+				</div>
+			</h1>
+			<h2 class="text-2xl text-wrap lg:max-w-[700px]">
+				<span class="opacity-80"
+					>En busca de mi primera experiencia de trabajo.</span
+				>
+
+				<p class="">
+					<span class="text-purple-500">Desarrollador Front-end.</span
+					>
+					<span class="opacity-80"> Ubicado en</span>
+					<span class="text-sky-300"> Paysandú, Uruguay.</span>
+				</p>
+
+				<p class="">
+					<span class="opacity-80">
+						Pasión para crear experiencias web excepcionales</span
+					>
+					<span class="text-purple-500"
+						>buscando oportunidades desafiantes.</span
+					>
+				</p>
+			</h2>
+
+			<nav class="flex gap-4 flex-wrap mt-8">
+				<SocialPill
+					href="https://www.linkedin.com/in/elias-silva-96a7182a6/"
+				>
+					<LinkedInIcon class="size-6" />
+					LinkedIn
+				</SocialPill>
+
+				<SocialPill href="https://github.com/EliasSilva1702">
+					<GitHubIcon class="size-6" />
+					GitHub
+				</SocialPill>
+
+				<SocialPill href="mailto:eliassilva170206@gmail.com">
+					<MailIcon class="size-6" />
+					eliassilva170206@gmail.com
+				</SocialPill>
+			</nav>
+		</SectionContainer>
+
+		<SectionContainer id="experiencia">
+			<h2
+				class="text-2xl font-semibold mb-8 flex justify-center items-center gap-x-2"
+			>
+				<CodeIcon class="size-7" /> Experiencia en el desarrollo web
+			</h2>
+			<Experiencia />
+		</SectionContainer>
+
+		<SectionContainer id="proyectos" class="mt-28">
+			<h2
+				class="text-4xl font-semibold mb-12 flex justify-center items-center gap-x-2 flex-row-reverse"
+			>
+				Proyectos
+				<ProjectIcon class="size-7" />
+			</h2>
+			<Projects />
+		</SectionContainer>
+
+		<SectionContainer id="contacto">
+			<h2 class="text-2xl sm:text-4xl font-semibold mt-32 mb-10 flex justify-center items-center gap-x-2 flex-row-reverse">Contacta conmigo
+				<MassageIcon class="size-7" />
+			</h2>
+			
+			<Contacto />
+		</SectionContainer>
+	</main>
+</Layout>

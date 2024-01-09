@@ -1,0 +1,94 @@
+---
+import PHP 
+from "./icons/Php.astro";
+
+import HTML 
+from "./icons/Html5.astro";
+
+import CSS 
+from "./icons/Css.astro";
+
+import BOOT 
+from "./icons/Bootstrap.astro";
+
+import JS from "./icons/JavaScript.astro";
+
+
+
+const TAGS = {
+    PHP: {
+        name: "PHP",
+        class: "bg-[#474A8A] text-white rounded-full",
+        icon: PHP,
+    },
+    HTML: {
+        name: "HTML5",
+        class: "bg-orange-600 text-white rounded-full",
+        icon: HTML,
+    },
+    CSS: {
+        name: "CSS3",
+        class: "bg-blue-400 text-white rounded-full",
+        icon: CSS,
+    },
+    BOOT: {
+        name:"Bootstrap",
+        class: "bg-purple-900 text-white rounded-full",
+        icon: BOOT,
+    },
+    JS: {
+        name: "JavaScript",
+        class: "text-white bg-yellow-600 rounded-full",
+        icon: JS
+    }
+};
+
+const PROJECTS = [
+    {
+        title: "Bassai",
+        description:
+            "Proyecto creado para una empresa de limpieza uruguaya con el fin de proporcionar una información general de la misma, realizando publicaciones de sus productos. ",
+        link: "http://eliasagu.ddns.net/",
+        github: "#",
+        image: "../src/Imgs/Proyecto1MJ.webp",
+        tags: [TAGS.PHP, TAGS.HTML, TAGS.CSS, TAGS.BOOT, TAGS.JS],
+        icon: PHP,
+    },
+];
+---
+
+{
+    PROJECTS.map(({ image, title, description, tags }) => (
+        <article>
+            <h3 class="text-purple-400 text-4xl flex justify-center items-center font-mono">
+                {title}
+            </h3>
+            <p class="text-pretty text-base m-4">{description}</p>
+            <ul class="flex sm:gap-4 flex-wrap  m-2">
+                {tags.map((tag) => (
+                    <li>
+                        <span
+                            class={` flex items-center justify-center rounded-full text-xs gap-x-1 ${tag.class}
+                            py-1 px-2 ml-3 mb-3`}>
+                            
+                            <tag.icon class="size-4" />
+                            {tag.name}
+                        </span>
+                    </li>
+                ))}
+            </ul>
+            <img
+                class="rounded m-5 
+                        w-full
+                        h-80 
+                       shadow-2xl shadow-white/20 
+                       object-cover 
+                       hover:scale-105 transition-all
+                       "
+                       
+                src={image}
+                alt={`Captura de pantalla del proyecto ${image}`}
+            />
+        </article>
+    ))
+}

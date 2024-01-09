@@ -1,0 +1,34 @@
+---
+import type { Code, Debug } from "astro:components";
+import ExperienciaItem from "../components/ExperienciaItem.astro"
+const EXPERIENCE = [
+    {
+        date: "Marzo 2021",
+        title: "Instituto Tecnológico Superior Paysandú",
+        description: "Mis comienzos en la programación aprendiendo y estudiando el lenguaje Java ",
+        link: "#"
+    },
+     {
+        date: "Abril 2022",
+        title: "Instituto Tecnológico Superior Paysandú",
+        description: "En este año aprendo Java POO y SQL en el motor de Bases de Datos PostgresSQL para la web y software de escritorio",
+        link: "#"
+     },
+     {
+        date: "Diciembre 2023",
+        title: "Instituto Tecnológico Superior Paysandú",
+        description: "Ya en esta fecha me egreso de mi bachillerato de desarrollo web, habiendo aprendido PHP, HTML5, CSS3, JavaScript, Java, SQL y BASH",
+        link: "#"
+     }
+]
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {
+        EXPERIENCE.map(experience => (
+        <li class="mb-10 ms-4">
+            <ExperienciaItem {...experience}/>
+            </li>
+        ))
+    }
+</ol>
