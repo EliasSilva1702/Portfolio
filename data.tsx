@@ -157,8 +157,8 @@ export const dataExperience = [
             },
             {
                 name: "PHP",
-                subtitle: "Experienced",
-                value: 70,
+                subtitle: "Intermediate",
+                value: 60,
             },
         ],
     },
