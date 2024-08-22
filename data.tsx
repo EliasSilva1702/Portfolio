@@ -265,7 +265,7 @@ export const dataTestimonials = [
         id: 3,
         name: "Oscar María",
         description:
-            "Excelente profecional, me ha ayudado a obtener opiniones auténticas sobre diferentes productos y servicios. Tambien me ha logrado ayudar mucho en mis compras en línea y poder resaltar más en el mundo de la web.",
+            "Excelente profesional, me ha ayudado a obtener opiniones auténticas sobre diferentes productos y servicios. Tambien me ha logrado ayudar mucho en mis ventas en línea y poder resaltar más en el mundo de la web.",
         imageUrl: "/Client1.png",
     },
 ];
