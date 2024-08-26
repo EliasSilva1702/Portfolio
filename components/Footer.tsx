@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import React from 'react'
-import { Separator } from './ui/separator'
 
 export default function Footer() {
     return (
@@ -9,7 +8,7 @@ export default function Footer() {
                 <div className="">
                     <h4 className='text-3xl font-bold my-6 md:my-0'>Elias Silva</h4>
                 </div>
-                <div className="px-2 flex justify-between md:gap-8 items-center">
+                <div className="px-2 flex justify-between gap-2 md:gap-8 items-center">
                     <Link href="#about-me">About me</Link>
                     <Link href="#skills">Skills</Link>
                     <Link href="#services">Services</Link>
@@ -17,7 +16,6 @@ export default function Footer() {
                     <Link href="#contact">Contact</Link>
                 </div>
             </div>
-            <Separator />
             
         </footer>
     )

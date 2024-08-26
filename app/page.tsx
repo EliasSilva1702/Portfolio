@@ -8,6 +8,7 @@ import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import UpdateSoon from "@/components/UpdateSoon/UpdateSoon";
 import Footer from "@/components/Footer";
+
 export default function Home() {
   return (
     <main className="pb-40">
@@ -20,7 +21,7 @@ export default function Home() {
       <Portfolio />
       <Testimonials />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }

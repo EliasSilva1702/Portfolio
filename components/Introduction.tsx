@@ -24,7 +24,7 @@ export default function introduction() {
             </Link>
           </div>
         </div>
-        <Image className=' rounded-xl object-cover m-4' src="/photo_cv.jpg" alt='Profile pic' width={400} height={400} />
+        <Image className='rounded-xl object-cover my-4 mx-auto' src="/photo_cv.jpg" alt='Profile pic' width={400} height={400} />
       </div>
     </Container>
   )
