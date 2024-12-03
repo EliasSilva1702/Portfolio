@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from './shared/Title'
-import { dataExperience } from '@/data'
+import { dataExperience } from '@/public/locales/en/data'
 import { BadgeCheck } from 'lucide-react'
 import { Progress } from './ui/progress'
 

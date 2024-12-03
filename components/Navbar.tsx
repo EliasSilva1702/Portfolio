@@ -1,4 +1,4 @@
-import { itemsNavbar } from '@/data'
+import { itemsNavbar } from '@/public/locales/en/data'
 import Link from 'next/link'
 import React from 'react'
 import { ToggleTheme } from './toggle-theme'

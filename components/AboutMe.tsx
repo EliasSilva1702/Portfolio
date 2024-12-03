@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from './shared/Title'
-import { dataAboutMe, dataSlider, itemsNavbar } from '@/data'
+import { dataAboutMe, dataSlider, itemsNavbar } from '@/public/locales/en/data'
 import { Button } from './ui/button'
 import { Phone } from 'lucide-react'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './ui/carousel'

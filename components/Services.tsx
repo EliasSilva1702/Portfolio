@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from './shared/Title'
-import { dataServices } from '@/data'
+import { dataServices } from '@/public/locales/en/data'
 import { features } from 'process'
 import { Check } from 'lucide-react'
 
